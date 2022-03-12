@@ -1,5 +1,6 @@
 import feedparser, base64, re, sys
 
+##Prompt and github should let you know everything you need. If not, open an issue please!
 filename = input("What should we name the output file? \n Please include .txt if you want extension. (lookin' at you, Windows users) \n .txt file will be stored in directory you ran me from. \n make sure clipboard monitor is enabled in JDownloader2 \n and simply select all text in file and copy, \n JD2 will do the rest. \n You can resolve most confusing entries in JD2 by searching against the .txt we will generate once you type a name and press ENTER: ")
 with open (filename, "w+") as file:
 	file.write("\n        \n")

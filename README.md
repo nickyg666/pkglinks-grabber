@@ -6,10 +6,10 @@ this is my first actual python project "worth" sharing (the other was a simple c
 #*v1.1 out*
 is a bit shorter lines wise, takes a cleaner and different approach (using .json extension on feed, using json module in script), and still parses all comment data correctly. It does appear to miss some b64 strings occasionally, but it will still print them to the file as an archival feature. (it's a feature, not a bug lol). I know it's not the best fake feature to deal with but hey it's something for now. You can always submit a PR if you're ready to teach me something neat!
 pro-tip: if you would like silent output, you can comment out: 
-print(title)
-print(entry)
-print(link)
-at the bottom of my for loop.
+  print(title)
+  print(entry)
+  print(link)
+at the bottom of my for loop. I would advise against it though as you can just put it on your clipboard from the shell window, and not have to open the generated .txt. I still have to add in the bit where it won't just overwrite the whole file everytime you run it.
 
 #roadmap
 #immediate waiting to commit

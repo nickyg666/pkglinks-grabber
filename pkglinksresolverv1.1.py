@@ -6,7 +6,7 @@ filename = input("What should we name the output file? \n Please include .txt if
 
 with open (filename, "w+") as file:
 	file.write("\n        \n")
-url = "https://www.reddit.com/r/PkgLinks.json?limit=100&after="
+url = "https://www.reddit.com/r/PkgLinks/new.json?sort=newest&limit=100&after="
 r = requests.get(url, headers = {'User-agent': 'Chrome'})
 thejson = r.json()
 for x in range(101):

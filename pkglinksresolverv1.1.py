@@ -10,8 +10,8 @@ url = "https://www.reddit.com/r/PkgLinks/new.json?sort=newest&limit=100&after="
 r = requests.get(url, headers = {'User-agent': 'Chrome'})
 thejson = r.json()
 for x in range(100):
-	entry = str(thejson["data"]["children"][x]["data"]["selftext"])
-	title = str(thejson["data"]["children"][x]["data"]["title"])
+	entry = thejson["data"]["children"][x]["data"]["selftext"]
+	title = thejson["data"]["children"][x]["data"]["title"]
 	b64only = re.findall(r'((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==))',entry)
 	btostr = str(b64only)
 	bstr2byte = btostr.encode('ascii')

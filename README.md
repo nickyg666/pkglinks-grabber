@@ -12,8 +12,10 @@ pro-tip: if you would like silent output, you can comment out:
 at the bottom of my for loop. I would advise against it though as you can just put it on your clipboard from the shell window, and not have to open the generated .txt. I still have to add in the bit where it won't just overwrite the whole file everytime you run it.
 
 #  roadmap
-#  immediate waiting to commit
-two functions main() and next() to gui-ize and pull next links, next() has problem where it doesn't actually update (or at least maybe requests/json lines are not reading the right version of url variable). so I have to learn a bit more about global, nonlocal keywords and their functions as well as scope of functions before I can submit.
+#  now - 3 months
+learn list comprehension to the max. also get comfortable editing dict types and managing them. make the same script with several approaches
+#  plan for finished project
+two functions main() and next() to gui-ize or run always and pull next links, next() has problem where it doesn't actually update (or at least maybe requests/json lines are not reading the right version of url variable). so I have to learn a bit more about requests using str concatenated urls, may have to use a specialized importable url handler.
 after I figure that out it should be able to go back all the way, but will probably limit to 1000 entries.
 # depends (trying to use popular/built-ins)
 feedparser (first two uploads only), json, base64, re, requests
